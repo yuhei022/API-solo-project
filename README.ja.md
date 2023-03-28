@@ -98,8 +98,8 @@ PUT /api/employees/7
       }
 ```
 
-※以下のようにボディ部でも ID を指定した場合、ボディ部の ID を使用して更新、もしくは追加を行います。以下の例では ID が 7 の従業員が存在した場合は ID が 8 に更新され、
-存在しなかった場合は ID が 8 の従業員が追加されます。
+※以下のようにボディ部でも ID を指定した場合、ボディ部の ID を使用して更新、もしくは追加を行います。
+以下の例では ID が 7 の従業員が存在した場合は ID が 8 に更新され、存在しなかった場合は ID が 8 の従業員が追加されます。
 
 ```
 #URI
@@ -142,6 +142,12 @@ npm i
 DB_USER=your_username
 DB_PASSWORD=your_password
 DB_NAME=your_db_name
+```
+
+DB の初期設定(migration)
+
+```
+npm run migrate
 ```
 
 ## Commands
