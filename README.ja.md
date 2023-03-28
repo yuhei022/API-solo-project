@@ -1,7 +1,18 @@
 # About
 
-Employee API はシンプルな従業員管理 API です。
+Employee API はシンプルな従業員(Employee)管理 API です。
+
 GET/POST/PUT/PATCH/DELETE の操作をサポートしています。
+
+# Resource "Employee"
+
+```
+Table employee {
+    id integer [primary key]
+    name varchar(255) [not null]
+    age integer
+}
+```
 
 # API Usage
 
@@ -28,7 +39,27 @@ ID が存在しなければステータスコード 404 が返却されます。
 
 ## POST
 
+```
+POST /api/employees
+```
+
+リクエストボディに設定された内容で従業員を追加します。
+
+ボディ部の設定例：
+
+```
+{
+        id: 6,
+        name: 'Taro Yamada',
+        age: 25,
+      }
+```
+
 ## PATCH
+
+```
+PATCH /api/employees/:id
+```
 
 ## PUT
 
