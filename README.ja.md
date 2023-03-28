@@ -157,7 +157,7 @@ npm run test
 ```
 
 テストを実行します。
-（現在のバージョンでは、毎回以下の npm run seed を使用しないと、正しくテストが実行されません。:sweat_smile:）
+（現在のバージョンでは、毎回以下の npm run seed を test 直前に実行しないと、正しくテストが実行できません。:sweat_smile:）
 
 ```
 npm run seed
